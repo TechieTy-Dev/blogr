@@ -1,0 +1,13 @@
+export { default as logo } from "./logo.svg";
+export { default as close } from "./icon-close.svg";
+export { default as hamburger } from "./icon-hamburger.svg";
+export { default as arrow } from "./icon-arrow-dark.svg";
+export { default as editor } from "./illustration-editor-desktop.svg";
+export { default as editorM } from "./illustration-editor-mobile.svg";
+export { default as laptop } from "./illustration-laptop-desktop.svg";
+export { default as laptopM } from "./illustration-laptop-mobile.svg";
+export { default as phone } from "./illustration-phones.svg";
+export { default as circles } from "./bg-pattern-circles.svg";
+export { default as intro } from "./bg-pattern-intro-desktop.svg";
+export { default as introM } from "./bg-pattern-intro-mobile.svg";
+export { default as arrowL } from "./icon-arrow-light.svg";

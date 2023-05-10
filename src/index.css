@@ -1,13 +1,57 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+	font-size: 16px;
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+}
+
+p {
+	font-family: "Overpass", sans-serif;
+}
+
+.intro-gradient {
+	background: linear-gradient(
+		to bottom right,
+		hsl(13, 100%, 72%),
+		hsl(353, 100%, 62%)
+	);
+}
+
+.cta-gradient {
+	background: linear-gradient(
+		to right,
+		hsl(13, 100%, 72%),
+		hsl(353, 100%, 62%)
+	);
+}
+
+.body-gradient {
+	background: linear-gradient(to left, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+	background-position: center top;
+}
+
+.overpass {
+	font-family: "Overpass", sans-serif;
+}
+.unbuntu {
+	font-family: "Unbuntu", sans-serif;
+}
+
+@media screen and (min-width: 767px) {
+	.cta-gradient {
+		background: white;
+		color: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+	}
 }
